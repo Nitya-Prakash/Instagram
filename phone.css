@@ -1,0 +1,169 @@
+#screen{
+    flex-wrap: nowrap;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+#nav{
+    position: static;
+    height: 7%;
+    width: 100%;
+}
+
+#nav img{
+    height: 64%;
+    width: 28%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#top-icons {
+    padding: 0px 15px;
+}
+
+#top-icons #top-heart {
+    font-size: 25px;
+    padding: 25px;
+}
+
+#top-icons #top-messenger {
+    font-size: 25px;
+    color: white;
+}
+
+.story {
+    height: 65px;
+    width: 65px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-section {
+    height: 85%;
+    width: 100%;
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 10px 20px grey; */
+    margin: 8px 0px 0px 0px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.post-section #profile #user-id {
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+.post-section #profile #user-id img {
+    height: 80%;
+    width: 15%;
+    max-width: 20%;
+    border-radius: 50%;
+    margin: 0px 0px 0px 10px;
+    border: none;
+    position: relative;
+}
+
+.post-section #profile #user-id  h4{
+    color: white;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+.post-section #profile #flw-btn a {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 17px;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+}
+
+.post-section #profile-icon #vertical-ellipsis {
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+.post-section img {
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+    /* border-bottom: 1px solid white; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-section #rxn-section {
+    min-height: 5%;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-section #rxn-section #love-rxn {
+    font-size: 22px;
+    padding: 0px 0px 0px 20px;
+}
+.post-section #rxn-section #loved {
+    font-size: 22px;
+    padding: 0px 0px 0px 20px;
+    position: relative;
+    opacity: 0;
+}
+
+.post-section #rxn-section #cmnt-rxn {
+    font-size: 22px;
+    padding: 0px 22px 0px 0px;
+}
+
+.post-section #rxn-section #share-rxn {
+    font-size: 22px;
+    padding: 0px 0px 0px 13px;
+    color: white;
+}
+
+.post-section #rxn-section #save {
+    font-size: 22px;
+    padding: 0px 20px 0px 0px;
+    color: white;
+}
+
+.post-section #caption h4 {
+    color: white;
+    font-weight: 400;
+    /* height: 40px; */
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.post-section #caption {
+    min-height: 10%;
+    max-height: 10%;
+    width: 100%;
+    /* border-bottom: 1px solid red; */
+    display: flex;
+    gap: 10px;
+}
+
+.post-section #caption span {
+    color: white;
+    font-weight: 300;
+    display: block;
+    font-size: 15px;
+    padding-top: 9px;
+}

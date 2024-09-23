@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    ;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#screen {
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 17px;
+    overflow: hidden;
+    position: relative;
+}
+
+#nav {
+    height: 5%;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#nav img {
+    height: 100%;
+    width: 30%;
+    mix-blend-mode: difference;
+    object-fit: cover;
+    object-position: center;
+}
+
+#top-icons {
+    padding: 0px 5px;
+}
+
+#top-icons #top-heart {
+    font-size: 20px;
+    padding: 15px;
+}
+
+#top-icons #top-messenger {
+    font-size: 20px;
+    color: white;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+    z-index: 90;
+}
+
+#stories {
+    height: 10%;
+    width: 100%;
+    /* border-bottom: 1px solid grey; */
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.story {
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-section {
+    /* min-height: 85%;
+    max-height: 85%; */
+    height: 85%;
+    width: 100%;
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 10px 20px grey; */
+    margin: 8px 0px 0px 0px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.post-section::-webkit-scrollbar{
+    display: none;
+}
+
+.post-section #profile {
+    min-height: 10%;
+    max-height: 10%;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-section #profile #user-id {
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+/* .post-section #profile #user-id #story {
+    height: 75%;
+    width: 10%;
+    border-radius: 50%;
+    margin: 0px 0px 0px 10px;
+    background: linear-gradient(red,rgb(137, 19, 38),rgb(222, 63, 89),yellow);
+    padding: 2px;
+    object-fit: cover;
+    object-position: center;
+} */
+.post-section #profile #user-id img {
+    height: 75%;
+    width: 10%;
+    border-radius: 50%;
+    margin: 0px 0px 0px 10px;
+    border: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-section #profile #user-id h4 {
+    color: white;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+.post-section #profile #flw-btn a {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.post-section #profile-icon #vertical-ellipsis {
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.post-section #Post-img img {
+    min-height: 60%;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-section #Post-img #lovee {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.post-section #rxn-section {
+    min-height: 5%;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-section #rxn-section #love-rxn {
+    font-size: 20px;
+    padding: 0px 0px 0px 10px;
+    position: absolute;
+}
+.post-section #rxn-section #loved {
+    font-size: 21px;
+    padding: 0px 0px 0px 10px;
+    position: relative;
+    opacity: 0;
+}
+
+.post-section #rxn-section #cmnt-rxn {
+    font-size: 20px;
+    padding: 0px 13px 0px 0px;
+}
+
+.post-section #rxn-section #share-rxn {
+    font-size: 20px;
+    padding: 0px 0px 0px 13px;
+    color: white;
+}
+
+.post-section #rxn-section #save {
+    font-size: 20px;
+    padding: 0px 10px 0px 0px;
+    color: white;
+}
+
+.post-section #caption {
+    min-height: 10%;
+    max-height: 10%;
+    width: 100%;
+    /* border-bottom: 1px solid red; */
+    display: flex;
+    gap: 10px;
+}
+
+.post-section #caption h4 {
+    color: white;
+    font-weight: 400;
+    /* height: 20px; */
+}
+
+.post-section #caption span {
+    color: white;
+    font-weight: 400;
+    display: block;
+}
+
+footer{
+    height: 7%;
+    width: 100%;
+    color: white;
+    position: sticky;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+footer #btm-icons #btm-home{
+    font-size: 22px;
+    padding: 27px;
+    cursor: pointer;
+}
+
+footer #btm-icons #btm-search{
+    font-size: 22px;
+    padding: 27px;
+    cursor: pointer;
+}
+footer #btm-icons #btm-add{
+    font-size: 27px;
+    padding: 27px;
+    cursor: pointer;
+}
+
+footer #btm-icons img{
+    height: 20px;
+    width: 20px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+footer #btm-pfl{
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+}
+footer #btm-pfl img{
+    height: 75%;
+    width: 100%;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+}
