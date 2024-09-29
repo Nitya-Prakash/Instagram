@@ -17,7 +17,6 @@ arr.forEach(function (elem, idx) {
 storiyan.innerHTML = clutter
 
 storiyan.addEventListener("click", function (dets) {
-    // console.log(arr[dets.target.id].story);
     document.querySelector("#full-screen").style.display = "block"
     document.querySelector("#full-screen").style.backgroundImage = `url(${arr[dets.target.id].story})`
 
@@ -25,41 +24,6 @@ storiyan.addEventListener("click", function (dets) {
         document.querySelector("#full-screen").style.display = "none"
     }, 3000);
 })
-
-
-
-
-
-
-
-
-// var array = [
-//     {dp:"Post-Images/profile-img.jpg",story:"Post-Images/img0.jpg"}
-// ];
-
-// var stories = document.querySelector("#story");
-
-// var clutters = ""
-
-// array.forEach(function(data){
-//     clutters += `<div id="story">
-//     <img src="${data.dp}" alt="">
-// </div>`;
-// });
-
-// stories.innerHTML = clutters 
-
-// stories.addEventListener("click",function(dets){
-//     // console.log(arr[dets.target.id].story);
-//     document.querySelector("#full-screen").style.display = "block"
-//     document.querySelector("#full-screen").style.backgroundImage = `url(${array[dets.target.id].story})`
-
-//     setTimeout(() => {
-//         document.querySelector("#full-screen").style.display = "none"
-//     }, 3000);  
-// })
-
-
 
 
 var flw = document.querySelectorAll("#flw-btn a");
@@ -110,27 +74,3 @@ containers.forEach(function (container) {
         }, 1000);
     });
 });
-
-// containerd.forEach(function(pintu){
-//     var loved = pintu.querySelector("#loved");
-
-//     pintu.addEventListener("click",function(){
-//         loved.style.opacity = 1;
-        
-//     });
-// });
-
-
-
-
-
-
-
-
-// containerd.forEach(function(pintu){
-//     var loved = pintu.querySelector("#loved");
-
-//     pintu.addEventListener("click",function(){
-//         loved.style.opacity = 1;
-//     })
-// })
